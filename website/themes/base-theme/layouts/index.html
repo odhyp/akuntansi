@@ -1,5 +1,31 @@
 {{ define "main" }}
-<div class="mx-auto w-full max-w-full">
-  <h1 class="text-center text-3xl font-bold">Hugo TailwindCSS Starter</h1>
+<div class="mx-auto flex w-full max-w-screen-xl py-16">
+  <!--  MAIN SECTION START -->
+  <section class="w-full max-w-full border border-dashed border-red-400 px-4">
+    <article class="prose mx-auto">{{ .Content }}</article>
+  </section>
+  <!--  MAIN SECTION END -->
+
+  <!--  SIDE SECTION START -->
+  <section class="w-[500px] border border-dashed border-green-600 px-4">
+    <div class="flex w-full flex-col items-center justify-center gap-y-8">
+      <img
+        class="h-40 w-auto"
+        src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Coat_of_arms_of_Yogyakarta.svg"
+        alt="Logo Pemda DIY"
+      />
+
+      <div class="flex flex-col gap-y-4">
+        <h2>Bidang Akuntansi</h2>
+        <h2>
+          Badan Pengelola Keuangan dan Aset<br />Daerah Istimewa Yogyakarta
+        </h2>
+        <p>Unit 3 Lt. 3, Komplek Kepatihan, Danurejan, Yogyakarta 55213</p>
+        <p>(0274)-562811 Psw. 1121-1122, fax: (0274)-564544</p>
+        <p>akuntansi.jogjaprov@gmail.com</p>
+      </div>
+    </div>
+  </section>
+  <!--  SIDE SECTION END -->
 </div>
 {{ end }}
