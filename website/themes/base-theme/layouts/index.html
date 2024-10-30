@@ -1,14 +1,16 @@
 {{ define "main" }}
 <div class="mx-auto flex w-full max-w-screen-xl py-16">
   <!--  MAIN SECTION START -->
-  <section class="w-full max-w-full border border-dashed border-red-400 px-4">
+  <section class="w-full max-w-full px-4">
     <article class="prose mx-auto">{{ .Content }}</article>
   </section>
   <!--  MAIN SECTION END -->
 
   <!--  SIDE SECTION START -->
-  <section class="w-[500px] border border-dashed border-green-600 px-4">
-    <div class="flex w-full flex-col items-center justify-center gap-y-8">
+  <section class="w-[500px] px-4">
+    <div
+      class="sticky top-8 flex w-full flex-col items-center justify-center gap-y-8"
+    >
       <img
         class="h-40 w-auto"
         src="https://upload.wikimedia.org/wikipedia/commons/b/b8/Coat_of_arms_of_Yogyakarta.svg"
