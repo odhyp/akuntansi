@@ -1,10 +1,12 @@
 module.exports = {
   darkMode: "class",
   content: [
-    "./themes/**/layouts/**/*.html",
-    "./content/**/layouts/**/*.html",
     "./layouts/**/*.html",
     "./content/**/*.html",
+    "./themes/**/layouts/**/*.html",
+    "./themes/**/content/**/*.html",
+    "./assets/**/*.js",
+    "./static/**/*.html",
   ],
   theme: {
     extend: {},
